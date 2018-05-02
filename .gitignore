@@ -5,7 +5,6 @@
 # Inverse ignore some stuff
 !/Assets/
 !/ProjectSettings/
-!/Build Release
 !README.md
 !LICENSE
 !/UnityPackage/

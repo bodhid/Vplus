@@ -24,8 +24,8 @@ public class BuildBehaviour
 		DeleteIfExists(folder + "Data/");
 		DirectoryInfo dataFolder = new DirectoryInfo(folder + "V+_Data");
 		dataFolder.MoveTo(folder + "Data");
-		FileInfo ffprobe = new FileInfo(folder + "Data/StreamingAssets/ffprobe.exe");
-		ffprobe.MoveTo(folder + "Data/Plugins/ffprobe.exe");
+		//FileInfo ffprobe = new FileInfo(folder + "Data/StreamingAssets/ffprobe.exe");
+		//ffprobe.MoveTo(folder + "Data/Plugins/ffprobe.exe");
 		DeleteIfExists(folder + "Data/StreamingAssets");
 		DirectoryInfo managedFolder = new DirectoryInfo(folder + "Data/Managed");
 		foreach (FileInfo f in managedFolder.GetFiles()) if (f.Extension == ".xml") f.Delete();
